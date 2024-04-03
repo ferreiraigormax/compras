@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário para Compra Automatizado v1.0</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="left-container">
+        <div class="icon-container">
+            <div class="icon-street">
+                <div class="street-faixa1"></div>
+                <div class="street-faixa2"></div>
+                <div class="street-faixa3"></div>
+                <div class="street-faixa4"></div>
+                <div class="street-faixa5"></div>
+                <div class="street-faixa6"></div>
+            </div>
+            <img src="https://cdn-icons-png.flaticon.com/512/1048/1048329.png">
+        </div>
+        <div class="search-input-box">
+            <h2>PESSOA SOLICITANTE</h2>
+            <input type="text" name="mechanic" class="mechanic" list="mechanics">
+            <datalist id="mechanics">
+                <option value="ABL DIESEL"></option>
+                <option value="JPL DIESEL"></option>
+                <option value="DF DIESEL"></option>
+                <option value="VAGNER - COPERCANA"></option>
+                <option value="JOÂO HERMINIO - COPERCANA"></option>
+                <option value="MOTORISTA - COPERCANA"></option>
+            </datalist>
+            <h2 class="text-search-one-tag">SELECIONE UMA PLACA</h2>
+            <div class="search-container">
+                <select name="Tags" class="tags">
+                </select>
+                <button class="button-search">Buscar</button>
+            </div>
+        </div>
+        <div class="info-container">
+            <h2>PLACA</h2>
+            <p class="info-placa">-</p>
+            <h2>MARCA</h2>
+            <p class="info-brand">-</p>
+            <h2>MODELO</h2>
+            <p class="info-model">-</p>
+            <h2>ANO</h2>
+            <p class="info-year">-</p>
+            <h2>CHASSIS</h2>
+            <p class="info-chassis">-</p>
+        </div>
+    </section>
+    <main class="right-container">
+            <form action="" class="form-container">
+                <h1>ENVIAR SOLICITAÇÃO DE COTAÇÃO</h1>
+                <textarea name="itensDescription" class="itens-description" wrap="hard" placeholder="Insira as peças e serviços aqui" required></textarea>
+                <input type="button" value="Enviar" class="button-send">
+            </form>
+    </main>
+</body>
+</html>

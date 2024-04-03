@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;1,600&display=swap');
+*{
+    margin: 0;
+    text-decoration: none;
+}
+
+body{
+    width:100%;
+    height: 100vh;
+    background-color: rgb(1, 31, 1);
+    display: flex;
+    flex-direction: row;
+}
+.left-container{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: space-around;
+    align-items: center;
+}
+.icon-container{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(8,75,13);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.icon-street{
+    width: 100px;
+    height: inherit;
+    transform: rotate(120deg);
+    background-color: black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    -webkit-clip-path: circle(100px);
+    clip-path: circle(100px);
+    
+}
+.street-faixa1, .streetfaixa2, .streetfaixa3{
+    width: 10px;
+    height: 50px;
+    background-color: white;
+    animation: rote 20ms ease-in infinite alternate;
+
+}
+.street-faixa4, .street-faixa5, .street-faixa6{
+    width: 10px;
+    height: 50px;
+    background-color: white;
+    animation: rote 20ms ease-in infinite alternate;
+}
+@keyframes rote{
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100%);
+    }
+}
+@keyframes caminhao {
+    from {
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(40px);
+    }
+    
+}
+.search-container{
+    border-bottom: 1px solid white;
+    height: 3em;
+
+}
+img{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+    animation: caminhao 2s alternate infinite;
+}
+.tags{
+    font-size: 1em;
+    border-radius: 10px;
+    font-weight: 600;
+    padding: 0.4em;
+
+}
+.search-input-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+.mechanic{
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 0.5em;
+    font-size: 1.2em;
+    width: 70%;
+}
+.button-search{
+    font-size: 1.2em;
+    background-color: rgb(203, 255, 207);
+    border-color: rgb(8, 75, 13);
+    color: rgb(1, 31, 1);
+    font-weight: 600;
+    border-radius: 10px;
+    width: 5em;
+    height: 1.8em;
+    transition: 1s;
+}
+.button-search:hover{
+    background-color: rgb(119, 148, 121);
+}
+.info-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 3rem;
+    gap: 10px;
+}
+h1{
+    color: rgb(1, 31, 1);
+    font-size: 2em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+h2{
+    color: rgb(198, 201, 18);
+    font-size: 1.2em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+p{
+    color: rgb(238, 238, 238);
+    font-size: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
+}
+.right-container{
+    background-color: rgb(200, 236, 200);
+    width: 90%;
+    height: inherit;
+    display: flex;
+    border-top-left-radius: 3.0rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+.form-container{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.itens-description{
+    width: 90%;
+    height: 80%;
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 40px;
+    padding: 40px;
+}
+.button-send{
+    justify-content: right;
+    align-items: right;
+    background-color:rgb(1, 31, 1);
+    color:rgb(245, 245, 234);
+    font-size: 2em;
+    border: none;
+    border-radius: 20px;
+    padding: 1rem;
+    transition: all 1s;
+}
+.button-send:hover{
+    background-color: rgb(119, 148, 121);
+}
